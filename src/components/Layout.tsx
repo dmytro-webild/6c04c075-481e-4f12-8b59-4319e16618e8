@@ -10,7 +10,7 @@ export default function Layout() {
     <StyleProvider buttonVariant="default" siteBackground="none" heroBackground="none">
       <SiteBackgroundSlot />
       <NavbarInline
-                logo="FlowRight"
+                logo="BT Plumbers and Heating"
                 navItems={[
                   { name: "Services", href: "#services" },
                   { name: "Reviews", href: "#reviews" },
@@ -23,7 +23,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <FooterSimpleCard
-                brand="FlowRight Plumbing"
+                brand="BT Plumbers and Heating"
                 columns={[
                   {
                     title: "Services",
@@ -31,29 +31,26 @@ export default function Layout() {
                       { label: "Leak Detection", href: "#services" },
                       { label: "Drain Cleaning", href: "#services" },
                       { label: "Water Heaters", href: "#services" },
-                      { label: "Bathroom Remodels", href: "#services" },
+                      { label: "Heating & Furnace", href: "#services" },
                       { label: "Sewer Repair", href: "#services" },
                     ],
                   },
                   {
-                    title: "Company",
+                    title: "Hours",
                     items: [
-                      { label: "About Us", href: "#" },
-                      { label: "Testimonials", href: "#reviews" },
-                      { label: "FAQ", href: "#faq" },
-                      { label: "Careers", href: "#" },
+                      { label: "Mon - Sat: 7am - 6pm" },
+                      { label: "Sunday: Closed" },
                     ],
                   },
                   {
                     title: "Contact",
                     items: [
-                      { label: "(555) 472-8100", href: "tel:5554728100" },
-                      { label: "info@flowrightplumbing.com", href: "mailto:info@flowrightplumbing.com" },
-                      { label: "Denver, CO" },
+                      { label: "(587) 572-2549", href: "tel:5875722549" },
+                      { label: "228 Sora Ter SE, Calgary, AB T3S 0A8" },
                     ],
                   },
                 ]}
-                copyright="© 2026 FlowRight Plumbing. All rights reserved."
+                copyright="© 2026 BT Plumbers and Heating. All rights reserved."
                 links={[{ label: "Privacy Policy" }, { label: "Terms of Service" }]}
               />
     </StyleProvider>
