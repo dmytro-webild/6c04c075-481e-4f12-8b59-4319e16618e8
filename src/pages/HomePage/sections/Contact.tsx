@@ -19,6 +19,14 @@ export default function ContactSection(): React.JSX.Element {
                 ]}
         textarea={{ name: "message", placeholder: "Describe your plumbing issue...", rows: 4, required: true }}
         buttonText="Send Request"
+        onSubmit={function(data) {
+          const name = data.name || "";
+          const phone = data.phone || "";
+          const email = data.email || "";
+          const msg = data.message || "";
+          const body = "Quote Request:\nName: " + name + "\nPhone: " + phone + "\nEmail: " + email + "\nMessage: " + msg;
+          window.location.href = "sms:+15875722549?body=" + encodeURIComponent(body);
+        }}
         imageSrc="https://storage.googleapis.com/webild/default/templates/plumber/contact.webp"
       />
             </div>
