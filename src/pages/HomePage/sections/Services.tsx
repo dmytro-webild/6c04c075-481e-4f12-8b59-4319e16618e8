@@ -33,8 +33,12 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="relative w-full bg-background">
-      <div className="w-content-width mx-auto flex flex-col items-center">
+    <section id="services" className="relative w-full bg-background overflow-hidden py-20">
+      {/* Background Image Overlay */}
+      <div className="absolute inset-0 z-0 opacity-15 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-background/90 to-background" />
+
+      <div className="relative z-10 w-content-width mx-auto flex flex-col items-center">
         {/* Section Badge */}
         <div className="px-3.5 py-1 mb-4 text-xs font-semibold uppercase tracking-wider card rounded-full border border-white/10 text-accent">
           Our Services
