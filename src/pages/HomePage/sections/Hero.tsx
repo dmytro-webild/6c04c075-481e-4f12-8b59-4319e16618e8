@@ -15,8 +15,8 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-[85vh] flex flex-col justify-between overflow-hidden bg-background">
       {/* Background Image Overlay */}
-      <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-background/80 via-background/95 to-background" />
+      <div className="absolute inset-0 z-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
 
       <div className="relative z-10 w-content-width mx-auto flex flex-col items-center text-center my-auto">
         {/* Social Proof Badge */}
